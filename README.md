@@ -1,27 +1,14 @@
 # rails-machine-cookbook
 
-TODO: Enter the cookbook description here.
+Base machine with ruby, mongodb and lxc.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+This test in ubuntu 14.04, vagrant 1.5.1
 
 ## Attributes
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['rails-machine']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+TODO: Add attibutes
 
 ## Usage
 
@@ -48,4 +35,6 @@ Include `rails-machine` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Juan Gabriel Fraire López (groteck@gmail.com)
+
+Licence:: ![WTFPL][http://upload.wikimedia.org/wikipedia/commons/0/0a/WTFPL_badge.svg] 
