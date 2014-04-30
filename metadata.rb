@@ -1,8 +1,8 @@
 name             'rails-machine'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
-license          'All rights reserved'
+maintainer       'Juan Gabriel Fraire López'
+maintainer_email 'groteck@gmail.com'
+license          'WTFPL'
 description      'Installs/Configures rails-machine'
-long_description 'Installs/Configures rails-machine'
+long_description 'README.md'
 version          '0.1.0'
 
