@@ -1,8 +1,9 @@
 #
 # Cookbook Name:: rails-machine
 # Recipe:: default
-#
-# Copyright (C) 2014 YOUR_NAME
-#
-# All rights reserved - Do Not Redistribute
-#
+include_recipe 'apt'
+
+node['rails-machine']['packages'].each do |pkg|
+  package pkg
+end
+
