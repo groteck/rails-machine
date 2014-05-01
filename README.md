@@ -37,4 +37,4 @@ Include `rails-machine` in your node's `run_list`:
 
 Author:: Juan Gabriel Fraire López (groteck@gmail.com)
 
-Licence:: ![WTFPL][http://upload.wikimedia.org/wikipedia/commons/0/0a/WTFPL_badge.svg] 
+![WTFPL](http://upload.wikimedia.org/wikipedia/commons/0/0a/WTFPL_badge.svg)
