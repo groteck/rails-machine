@@ -9,4 +9,3 @@ version          '0.1.0'
 recipe "rails-machine", "Setup your rails machine"
 depends "apt"
 depends "phantomjs"
-
