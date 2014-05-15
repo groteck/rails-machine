@@ -4,6 +4,17 @@ default['rails-machine']['packages'] = %w{
   nodejs mongodb mongodb-clients
 }
 
+# Pg dependencies
+default['rails-machine']['pg']['packages'] = %w{
+  postgresql-common postgresql libpq-dev
+}
+
+# Mongo dependencies
+default['rails-machine']['mongo']['packages'] = %w{
+  mongodb mongodb-clients
+}
+
+
 # User info
 default['rails-machine']['user'] = 'vagrant'
 
@@ -14,6 +25,9 @@ default['user_env'] = {
   'USER' => node['user_name'],
   'HOME' => node['user_home']
 }
+
+# Set default database
+default['rails-machine']['db'] == 'mongo'
 
 # RVM and gem settings
 default['rails-machine']['rvm']['installer_url'] = "https://get.rvm.io"
