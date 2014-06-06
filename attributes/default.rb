@@ -30,15 +30,11 @@ default['user_env'] = {
 default['rails-machine']['db'] == 'mongo'
 
 # RVM and gem settings
-default['rails-machine']['rvm']['installer_url'] = "https://get.rvm.io"
-default['rails-machine']['rvm']['branch']  = "stable"
-default['rails-machine']['rvm']['ruby'] = '2.1.1'
-default['rails-machine']['rvm']['packages'] = %w{
-  build-essential openssl libreadline6 libreadline6-dev curl git-core
-  zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3
-  libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool
-  bison ssl-cert subversion pkg-config libgdbm-dev libffi-dev
-  libcurl4-openssl-dev gawk
-}
-default['rails-machine']['rvm']['clean_sources'] = true
-default['rails-machine']['gem_options'] = 'gem: --no-rdoc --no-ri -V'
+default['rails-machine']['rvm']['ruby'] = '2.1.2'
+
+default['rvm']['user_installs'] = [
+  { 'user'          => node['rails-machine']['user'],
+    'default_ruby'  => node['rails-machine']['rvm']['ruby'],
+    'rubies'        => [node['rails-machine']['rvm']['ruby']]
+  }
+]

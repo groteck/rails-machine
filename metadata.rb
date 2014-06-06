@@ -7,5 +7,6 @@ long_description 'README.md'
 version          '0.1.0'
 
 recipe "rails-machine", "Setup your rails machine"
+depends "rvm"
 depends "apt"
 depends "phantomjs"
